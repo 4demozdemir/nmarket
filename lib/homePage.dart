@@ -3,6 +3,8 @@ import 'package:nmarket/products.dart';
 import 'package:nmarket/cart.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -16,8 +18,8 @@ class _HomePageState extends State<HomePage> {
     super.initState();
 
     _products = [
-      Products(),
-      Cart(),
+      const Products(),
+      const Cart(),
     ];
   }
 
@@ -29,7 +31,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0.0,
         backgroundColor: Colors.white,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "Come flying",
           style: TextStyle(
               fontSize: 20.0, fontWeight: FontWeight.bold, color: Colors.grey),
@@ -40,7 +42,7 @@ class _HomePageState extends State<HomePage> {
         currentIndex: _aktifIcerikNo,
         unselectedItemColor: Colors.grey[600],
         selectedItemColor: Colors.red[400],
-        items: [
+        items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Products"),
           BottomNavigationBarItem(
               icon: Icon(Icons.shopping_cart), label: "Cart"),

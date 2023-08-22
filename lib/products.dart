@@ -34,8 +34,8 @@ class _ProductsState extends State<Products>
           labelColor: Colors.red[400],
           unselectedLabelColor: Colors.grey,
           isScrollable: true,
-          labelStyle: TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500),
-          tabs: [
+          labelStyle: const TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500),
+          tabs: const [
             Tab(
               child: Text("Temel Gıda"),
             ),
@@ -53,7 +53,7 @@ class _ProductsState extends State<Products>
         Expanded(
           child: TabBarView(
             controller: _tabController,
-            children: [
+            children: const [
               Category(category: ""),
               Category(category: ""),
               Category(category: ""),

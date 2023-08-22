@@ -17,22 +17,22 @@ class Cart extends StatelessWidget {
             ),
           ),
         ),
-        ListTile(
+        const ListTile(
           title: Text("Çikolatalı gofret"),
           subtitle: Text("2 adet x 3.50 TL"),
           trailing: Text("7 TL"),
         ),
-        ListTile(
+        const ListTile(
           title: Text("Karpuz"),
           subtitle: Text("2 kg x 3.50 TL"),
           trailing: Text("7 TL"),
         ),
-        ListTile(
+        const ListTile(
           title: Text("Su"),
           subtitle: Text("10 litre x 1.5TL"),
           trailing: Text("15 TL"),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20.0,
         ),
         Row(
@@ -50,10 +50,10 @@ class Cart extends StatelessWidget {
                       color: Colors.red[400],
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5.0,
                   ),
-                  Text(
+                  const Text(
                     "29 TL",
                     style: TextStyle(
                       fontSize: 20.0,
@@ -66,7 +66,7 @@ class Cart extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 20.0,
         ),
         Padding(
@@ -77,8 +77,8 @@ class Cart extends StatelessWidget {
               borderRadius: BorderRadius.circular(10.0),
               color: Colors.red[400],
             ),
-            child: Center(
-              child: const Text(
+            child: const Center(
+              child: Text(
                 "Alışverişi Tamamla",
                 style: TextStyle(
                   fontSize: 20.0,
