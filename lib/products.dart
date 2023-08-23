@@ -37,7 +37,7 @@ class _ProductsState extends State<Products>
           labelStyle: const TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500),
           tabs: const [
             Tab(
-              child: Text("Temel Gıda"),
+              child: Text("Temel Gida"),
             ),
             Tab(
               child: Text("Şekerleme"),
@@ -54,10 +54,10 @@ class _ProductsState extends State<Products>
           child: TabBarView(
             controller: _tabController,
             children: const [
-              Category(category: ""),
-              Category(category: ""),
-              Category(category: ""),
-              Category(category: ""),
+              Category(category: "Temel Gida"),
+              Category(category: "Şekerleme"),
+              Category(category: "İçecekler"),
+              Category(category: "Temizlik"),
             ],
           ),
         ),
