@@ -34,7 +34,8 @@ class _ProductsState extends State<Products>
           labelColor: Colors.red[400],
           unselectedLabelColor: Colors.grey,
           isScrollable: true,
-          labelStyle: const TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500),
+          labelStyle:
+              const TextStyle(fontSize: 15.0, fontWeight: FontWeight.w500),
           tabs: const [
             Tab(
               child: Text("Temel Gida"),
